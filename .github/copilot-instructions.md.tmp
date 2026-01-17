@@ -1,0 +1,51 @@
+## Copilot / AI Agent Instructions — nexcent
+
+This is a small Next.js app-router project using TypeScript, TailwindCSS (v4), and `pnpm`.
+
+- Project entry: the app uses the `app/` router. Global layout and fonts live in [app/layout.tsx](app/layout.tsx).
+- Package manager & scripts: use `pnpm`. Common commands: `pnpm dev`, `pnpm build`, `pnpm start`, `pnpm lint` (see [package.json](package.json)).
+- Styling: Tailwind v4 + PostCSS configured; global styles at [app/globals.css](app/globals.css).
+
+Architecture & patterns (what matters)
+
+- Server components by default: files under `app/` are server components unless they start with `"use client"`. Prefer server components for layout and static UI; convert to client when using hooks or browser APIs. Example: [app/components/Header.tsx](app/components/Header.tsx) uses `"use client"` and `usePathname()` to set active links.
+- Fonts and providers: centralize fonts/providers in [app/layout.tsx](app/layout.tsx) using `next/font/google` to avoid duplicate downloads.
+- UI organization: shared UI lives in [app/components/](app/components/). Small presentational components use explicit TypeScript props (see [app/components/FeatureCard.tsx](app/components/FeatureCard.tsx)).
+
+Assets & Images
+
+- Static assets belong in `public/`. Prefer absolute paths (e.g. `/logo.svg`) when referencing public assets from components, or use static imports for optimization. Components commonly use `next/image` for optimized images.
+
+Integration & infra notes
+
+- There are no API routes in the repo. If adding backend endpoints, add route handlers under `app/api/` (app-router style).
+- `next.config.ts` is minimal — recommend conservative changes and include rationale in PR descriptions.
+
+Developer workflows & checks
+
+- Run dev: `pnpm dev` (Next runs on :3000 by default).
+- Build and type-check: `pnpm build` will run Next's build (includes TypeScript checks).
+- Lint: `pnpm lint` (configured via `eslint.config.mjs`).
+
+Conventions to follow
+
+- Keep changes focused: update only the files relevant to the task (UI → `app/components/*`, routing → `app/*`).
+- When introducing client behavior, add `"use client"` at file top and keep client logic minimal.
+- Prefer explicit TypeScript interfaces for component props and export shared types from `app/components/` or a `types/` file if added.
+
+Examples from this repo
+
+- Active nav example: [app/components/Header.tsx](app/components/Header.tsx) uses `usePathname()` to toggle `font-bold` for active routes.
+- Presentational component example: [app/components/FeatureCard.tsx](app/components/FeatureCard.tsx) declares a `FeatureCardProps` interface and uses `next/image`.
+
+Where to look first
+
+- Layout and global CSS: [app/layout.tsx](app/layout.tsx) and [app/globals.css](app/globals.css)
+- Page entry: [app/page.tsx](app/page.tsx)
+- Shared UI: [app/components/](app/components/)
+- Scripts & deps: [package.json](package.json)
+
+If you want this file expanded to cover CI, deployment, or testing patterns, tell me which area to prioritize.
+
+---
+Please review and tell me if any infra or integration details (CI, deployment target, external APIs) should be added.
