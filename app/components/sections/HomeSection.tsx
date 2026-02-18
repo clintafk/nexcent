@@ -14,5 +14,5 @@ export default function HomeSection() {
       <SpendingSection />
       <BodySection />
     </section>
-  )
+  );
 }

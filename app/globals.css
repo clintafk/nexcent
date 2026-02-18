@@ -1,2 +1,18 @@
 @import "tailwindcss";
 
+html {
+	scroll-behavior: smooth;
+}
+
+/* Note: overflow-x: hidden was removed from body because it breaks position: sticky.
+   If you need to prevent horizontal scrolling, apply overflow-x: hidden to a wrapper div instead. */
+
+@keyframes clients-scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
+}
+
+.animate-clients-scroll {
+	animation: clients-scroll 20s linear infinite;
+}
+

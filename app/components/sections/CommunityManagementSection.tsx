@@ -28,13 +28,13 @@ export default function CommunityManagementSection() {
     },
   ]
   return (
-    <section className="pl-36 pr-36 bg-white">
-      <div className="flex flex-col items-center gap-4">
+    <section className="px-4 py-8 md:px-12 md:py-12 lg:px-36 lg:py-16 bg-white">
+      <div className="flex flex-col items-center gap-6 md:gap-8">
         <div className="flex flex-col text-center gap-2">
-          <h2 className="font-semibold text-4xl text-[#4D4D4D] max-w-135.5">Manage your community in a single system</h2> 
-          <p className="font-normal text-base text-[#717171]">Who is Nexcent suitable for?</p>
+          <h2 className="font-semibold text-2xl md:text-3xl lg:text-4xl text-[#4D4D4D] max-w-full md:max-w-135.5">Manage your community in a single system</h2> 
+          <p className="font-normal text-sm md:text-base text-[#717171]">Who is Nexcent suitable for?</p>
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-4 w-full md:w-auto">
           {featureCards.map(({ src, alt, width, height, title, description }) => (
               <FeatureCard 
                 key={title}
