@@ -10,7 +10,7 @@ export default function DemoSection() {
         href={"/"}
       >
         Get a Demo
-        <Image src="/right_arrow.svg" alt="right arrow" width={16} height={16}/>
+        <Image src="/right_arrow_white.svg" alt="right arrow" width={16} height={16}/>
       </Link>
     </section>
   )
