@@ -13,9 +13,9 @@ export default function DesignSection() {
             <h2 className="text-[#4D4D4D] font-semibold text-2xl md:text-3xl lg:text-4xl">How to design your site footer like we did</h2>
             <p className="text-[#717171] text-normal text-sm md:text-[14px]">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
           </div>
-          <div className="pl-8 pr-8 pt-3.5 pb-3.5 bg-[#4CAF4F] rounded-md w-fit hover:bg-[#3e8e41] transition-colors">
-            <Link href="/" className="font-medium text-sm text-white">Learn More</Link>
-          </div>
+          <Link href="/" className="inline-block pl-8 pr-8 pt-3.5 pb-3.5 bg-[#4CAF4F] rounded-md w-fit hover:bg-[#3e8e41] transition-colors font-medium text-sm text-white">
+            Learn More
+          </Link>
         </div>
       </div>
     </section>

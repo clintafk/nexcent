@@ -13,9 +13,9 @@ export default function SpendingSection() {
             <h2 className="text-[#4D4D4D] font-semibold text-2xl md:text-3xl lg:text-4xl">The unseen spending of three years at Pixelgrade</h2>
             <p className="text-[#717171] text-normal text-sm md:text-[14px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
           </div>
-          <div className="pl-8 pr-8 pt-3.5 pb-3.5 bg-[#4CAF4F] rounded-md w-fit hover:bg-[#3e8e41] transition-colors">
-            <Link href="/" className="font-medium text-sm text-white">Learn More</Link>
-          </div>
+          <Link href="/" className="inline-block pl-8 pr-8 pt-3.5 pb-3.5 bg-[#4CAF4F] rounded-md w-fit hover:bg-[#3e8e41] transition-colors font-medium text-sm text-white">
+            Learn More
+          </Link>
         </div>
       </div>
     </section>

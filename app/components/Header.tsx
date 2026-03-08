@@ -44,12 +44,12 @@ export default function Header() {
 
         {/* Desktop Auth Buttons */}
         <div className="hidden lg:flex gap-3.5">
-          <div className="pl-5 pr-5 pt-2.5 pb-2.5 bg-white rounded-sm hover:bg-gray-50 transition-colors" >
-            <Link href="/" className="font-medium text-sm text-[#4CAF4F]">Login</Link>
-          </div>
-          <div className="pl-5 pr-5 pt-2.5 pb-2.5 bg-[#4CAF4F] rounded-md hover:bg-[#3e8e41] transition-colors">
-            <Link href="/" className="font-medium text-sm text-white">Sign Up</Link>
-          </div>
+          <Link href="/" className="inline-block pl-5 pr-5 pt-2.5 pb-2.5 bg-white rounded-sm hover:bg-gray-50 transition-colors font-medium text-sm text-[#4CAF4F]">
+            Login
+          </Link>
+          <Link href="/" className="inline-block pl-5 pr-5 pt-2.5 pb-2.5 bg-[#4CAF4F] rounded-md hover:bg-[#3e8e41] transition-colors font-medium text-sm text-white">
+            Sign Up
+          </Link>
         </div>
 
         {/* Mobile Hamburger Button */}
