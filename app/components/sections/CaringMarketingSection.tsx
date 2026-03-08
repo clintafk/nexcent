@@ -27,7 +27,7 @@ export default function CaringMarketingSection() {
         <h2 className="text-center text-neutral-600 font-semibold text-2xl md:text-3xl lg:text-4xl">Caring is the new marketing</h2>
         <p className="font-normal text-center text-[#717171] text-sm md:text-base max-w-full md:w-157">The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who&apos;s joining the community, read about how our community are increasing their membership income and lot&apos;s more.​</p>
       </div>
-      <div className="h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4">
+      <div className="h-auto grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4">
         {articles.map((article) => (
          <ImageTextOverlay key={article.index} {...article} />
         ))}

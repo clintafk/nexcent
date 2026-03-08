@@ -44,10 +44,10 @@ export default function Header() {
 
         {/* Desktop Auth Buttons */}
         <div className="hidden lg:flex gap-3.5">
-          <div className="pl-5 pr-5 pt-2.5 pb-2.5 bg-white rounded-sm" >
+          <div className="pl-5 pr-5 pt-2.5 pb-2.5 bg-white rounded-sm hover:bg-gray-50 transition-colors" >
             <Link href="/" className="font-medium text-sm text-[#4CAF4F]">Login</Link>
           </div>
-          <div className="pl-5 pr-5 pt-2.5 pb-2.5 bg-[#4CAF4F] rounded-md">
+          <div className="pl-5 pr-5 pt-2.5 pb-2.5 bg-[#4CAF4F] rounded-md hover:bg-[#3e8e41] transition-colors">
             <Link href="/" className="font-medium text-sm text-white">Sign Up</Link>
           </div>
         </div>
@@ -93,14 +93,14 @@ export default function Header() {
             <div className="pt-4 flex flex-col gap-3">
               <Link 
                 href="/" 
-                className="text-center py-2.5 bg-white rounded-sm font-medium text-sm text-[#4CAF4F]"
+                className="text-center py-2.5 bg-white rounded-sm font-medium text-sm text-[#4CAF4F] hover:bg-gray-50 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Login
               </Link>
               <Link 
                 href="/" 
-                className="text-center py-2.5 bg-[#4CAF4F] rounded-md font-medium text-sm text-white"
+                className="text-center py-2.5 bg-[#4CAF4F] rounded-md font-medium text-sm text-white hover:bg-[#3e8e41] transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Sign Up

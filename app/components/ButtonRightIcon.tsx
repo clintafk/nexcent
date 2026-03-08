@@ -10,7 +10,7 @@ interface ButtonRightIconProps {
 
 export default function ButtonRightIcon({label, href, icon_path, icon_alt}: ButtonRightIconProps) {
   return (
-    <Link className="flex p-2 gap-2 items-center font-semibold text-xl text-[#4CAF4F]" href={href}>
+    <Link className="flex p-2 gap-2 items-center font-semibold text-xl text-[#4CAF4F] hover:text-[#3e8e41] transition-colors" href={href}>
       {label}
       <Image src={icon_path} alt={icon_alt} width={24} height={24} />
     </Link>

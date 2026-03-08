@@ -14,7 +14,7 @@ export default function TeslaSection() {
   return (
     <section className="bg-[#F5F7FA]">
       <div className='px-4 py-6 md:px-12 md:py-8 lg:px-36 lg:py-8 xl:px-41.25 xl:py-8 flex flex-col lg:flex-row gap-6 md:gap-12 lg:justify-between xl:gap-19.5'>
-        <div className="w-full lg:w-auto flex justify-center sm:justify-start md:justify-center sm:shrink-0">
+        <div className="p-0 w-full lg:w-auto flex justify-center sm:justify-start md:justify-center sm:shrink-0">
           <Image className="rounded-lg" src="/tesla.png" width={326} height={326} alt="Tesla Image" />
         </div>
         <div className="w-full lg:min-w-187 flex flex-col gap-6 md:gap-8 justify-center">

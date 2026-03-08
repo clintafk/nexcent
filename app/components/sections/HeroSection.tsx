@@ -12,7 +12,7 @@ export default function HeroSection() {
             </h1>
             <p className="text-[#717171] text-sm md:text-base">Where to grow your business as a photographer: site or social media?</p>
           </div>
-          <Link href="/" className="font-medium text-sm pl-5 pr-5 pt-2.5 pb-2.5 bg-[#4CAF4F] rounded-md text-white">Register</Link>
+          <Link href="/" className="font-medium text-sm pl-5 pr-5 pt-2.5 pb-2.5 bg-[#4CAF4F] rounded-md text-white hover:bg-[#3e8e41] transition-colors">Register</Link>
         </div>
         <div className="w-auto h-auto flex justify-center">
           <Image src="/hero_image.png" width={391} height={407} alt="Hero Image" className="" />
