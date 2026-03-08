@@ -12,6 +12,9 @@ The application is built using a modern frontend stack:
 - **Styling**: Tailwind CSS
 - **Icons/Images**: Custom SVG assets
 
+## Design Reference
+The UI/UX design for this landing page is based on this beautiful [Figma Community Design](https://www.figma.com/community/file/1222060007934600841/minimal-landing-page-design-website-home-page-design-agency-website-ui-design).
+
 ## Getting Started
 
 Follow these instructions to set up the project locally and run the development server.
